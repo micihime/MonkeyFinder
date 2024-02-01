@@ -15,8 +15,9 @@
 
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Monkey">
-                <HorizontalStackLayout>
-                    <Label Text="{Binding Name}"/>
+                <HorizontalStackLayout Padding="10">
+                    <Label Text="{Binding Name}"
+                           FontSize="24"/>
                 </HorizontalStackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
