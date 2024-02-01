@@ -25,10 +25,16 @@
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Monkey">
                 <HorizontalStackLayout Padding="10">
-                    <Label Text="{Binding Name}" FontSize="24"/>
-                    <Label Text="{Binding Location}" FontSize="10"/>
-                    <Image Source="{Binding Image}"/>
+                    <Image Source="{Binding Image}"
+                           HeightRequest="100"
+                           WidthRequest="100"
+                           Aspect="AspectFill"/>
+                    <VerticalStackLayout Padding="10" Spacing="4" VerticalOptions="Center">
+                        <Label Text="{Binding Name}" FontSize="24"/>
+                        <Label Text="{Binding Location}" FontSize="10"/>
+                    </VerticalStackLayout>
                 </HorizontalStackLayout>
+
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
