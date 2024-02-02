@@ -19,6 +19,30 @@
                               Location="Central and East Africa"
                               Details="The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia"
                               Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg"/>
+                <model:Monkey Name="Baboon"
+              Location="Africa, Asia"
+              Details="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."
+              Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"/>
+                <model:Monkey Name="Capuchin Monkey"
+              Location="Central and South America"
+              Details="The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus."
+              Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg"/>
+                <model:Monkey Name="Red-shanked douc"
+              Location="Central and East Africa"
+              Details="The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia"
+              Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg"/>
+                <model:Monkey Name="Baboon"
+              Location="Africa, Asia"
+              Details="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."
+              Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"/>
+                <model:Monkey Name="Capuchin Monkey"
+              Location="Central and South America"
+              Details="The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus."
+              Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg"/>
+                <model:Monkey Name="Red-shanked douc"
+              Location="Central and East Africa"
+              Details="The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia"
+              Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg"/>
             </x:Array>
         </CollectionView.ItemsSource>
 
