@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace MonkeyFinder.ViewModel;
 
@@ -15,13 +16,13 @@ public class BaseViewModel : INotifyPropertyChanged
                 return;
 
             isBusy = value;
-            OnPropertyChanged(nameof(IsBusy)); //notify that this has changed
+            OnPropertyChanged(); //notify that this has changed
         }
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;
 
-    public void OnPropertyChanged(string name)
+    public void OnPropertyChanged([CallerMemberName]string name = null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
