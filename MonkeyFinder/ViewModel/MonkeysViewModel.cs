@@ -1,4 +1,5 @@
-﻿using MonkeyFinder.Model;
+﻿using CommunityToolkit.Mvvm.Input;
+using MonkeyFinder.Model;
 using MonkeyFinder.Services;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -17,7 +18,8 @@ public partial class MonkeysViewModel : BaseViewModel
         this.monkeyService = monkeyService;
     }
 
-    public async Task GetMonkeysAsync()
+    [RelayCommand]
+    async Task GetMonkeysAsync()
     {
         if (IsBusy)
             return;
