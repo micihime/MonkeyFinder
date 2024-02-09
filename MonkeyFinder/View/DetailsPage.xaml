@@ -41,8 +41,16 @@
                 <Label Text="{Binding Monkey.Population, StringFormat='Population: {0}'}"
                        Style="{StaticResource SmallLabel}"/>
             </VerticalStackLayout>
-
+            
+            <Button Text="Go Back" 
+                    Style="{StaticResource ButtonOutline}"
+                    Command="{Binding GoBackCommand}"
+                    IsEnabled="{Binding IsNotBusy}"
+                    Grid.Row="1"
+                    Margin="8"/>
+            
         </VerticalStackLayout>
+
     </ScrollView>
 
 </ContentPage>

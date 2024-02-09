@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using MonkeyFinder.Model;
 
 namespace MonkeyFinder.ViewModel;
@@ -12,5 +13,11 @@ public partial class MonkeyDetailsViewModel : BaseViewModel
     public MonkeyDetailsViewModel()
     {
             
+    }
+
+    [RelayCommand]
+    async Task GoBackAsync()
+    {
+        await Shell.Current.GoToAsync("..");
     }
 }
