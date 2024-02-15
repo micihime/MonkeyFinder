@@ -35,7 +35,8 @@
             <Button Text="Open Map" 
                     Style="{StaticResource ButtonOutline}"
                     Command="{Binding OpenMapCommand}"
-                    Grid.Row="1"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
                     Margin="8"/>
             
             <VerticalStackLayout Padding="10"
@@ -52,6 +53,8 @@
                     Style="{StaticResource ButtonOutline}"
                     Command="{Binding GoBackCommand}"
                     IsEnabled="{Binding IsNotBusy}"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
                     Grid.Row="1"
                     Margin="8"/>
             
