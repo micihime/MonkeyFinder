@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MonkeyFinder.Model;
+using System.Diagnostics;
 
 namespace MonkeyFinder.ViewModel;
 
@@ -10,14 +11,36 @@ public partial class MonkeyDetailsViewModel : BaseViewModel
     [ObservableProperty]
     Monkey monkey;
 
-    public MonkeyDetailsViewModel()
+    IMap map;
+
+    public MonkeyDetailsViewModel(IMap map)
     {
-            
+        this.map = map;            
     }
 
     [RelayCommand]
     async Task GoBackAsync()
     {
         await Shell.Current.GoToAsync("..");
+    }
+
+    [RelayCommand]
+    async Task OpenMapAsync()
+    {
+        try
+        {
+            await map.OpenAsync(Monkey.Latitude, Monkey.Longitude,
+                new MapLaunchOptions
+                {
+                    Name = Monkey.Name,
+                    NavigationMode = NavigationMode.None
+                });
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex);
+            await Shell.Current.DisplayAlert("Error!",
+                $"Unable to open map: {ex.Message}", "OK");
+        }
     }
 }
